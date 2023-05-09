@@ -104,6 +104,10 @@ body {
   margin: auto;
   font-family: 'Open Sans', sans-serif;
 }
+body p{
+  font-size: .875rem;
+  line-height: 1.125rem;
+}
 
 /*   Base Header - Footer Styles  */
 
@@ -113,35 +117,33 @@ footer {/*parent*/
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;/*why do i need these?*/
+  background-color: #202322;
+  text-align: center;
 }
 
 
 /*          Header Styles          */
 
 header {
-  background-color: #202322;
+ 
 }
 
 
 header .content-wrapper {/*child*/
   width: 90%;
-  /*display: flex;
-  flex-direction: column;*/
-  
-  /*parent element for flexbox
+  /*skillcush: 
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  align-content: center;*/
+  flex-flow: row wrap */
 
 }
 
 /*controls logo image*/
 header a {
-  display: flex;
+  /* kelly: display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
 }
 
 header img {
@@ -152,14 +154,25 @@ header img {
 
 header nav {
   display: flex;
-  justify-content: space-evenly;
+  
+  /*skillcrush:*/
+  justify-content: space-around;
+  align-items:center;
+  flex-flow: row wrap;
+
+  /* kelly:
+  justify-content: space-evenly;*/
 }
 
 header ul {
   width: 90%;
   padding: 0px;
   display: flex;
-  justify-content: space-evenly;
+  /*skillcrush:*/
+  justify-content: space-around;
+  /*kelly:
+  justify-content: space-evenly;*/
+  
   padding-top: 20px;
   padding-bottom: 15px;
   margin: 0px;
@@ -181,6 +194,63 @@ header nav a {
   text-decoration: none;
   color: #e2e3ed;
 }
+
+/*          Footer Styles       */
+
+footer {
+  
+}
+
+footer .contact-social-wrapper {
+}
+
+footer .footer-content {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  
+}
+
+footer .contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+}
+
+footer h4 {
+ 
+}
+
+footer p {}
+
+footer .social {
+  display: flex;/*child? need to center things inside*/
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+  
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/*skillcrush:
+footer .social-icons p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+footer .copywrite {
+}
+
+footer .copywrite p {}
+
 
 /*          Main Styles          */
 
@@ -211,11 +281,22 @@ main h1 {
   font-weight: 500;
   padding-top: 2em;
 }
+/*skillcrush
+.hero-area{
+  display: flex;
+  justify-content:center;
+  flex-flow: row wrap;
+}
 
 /*          Main-Aside Styles          */
 
 aside {
   background: #527158;
+  /*skillcrush:
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;*/
 }
 
 aside .content-wrapper {
@@ -254,18 +335,28 @@ aside .form {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 1.5em;
 }
 
 aside input {
   width: 100%;
+  padding: 2px;
+  text-transform: uppercase;
+  color: #2a423a;
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 
 /*          Main Section: Features Styles          */
 
-section .features {
-  background: url(../img/unplugged-retreat-features.jpg);/*img isn't working*/
+.features {
+  /*skillcrush:
+  display:flex;
+  justify-content:center;
+  flex-flow:row-wrap;*/
+  background: url(img/unplugged-retreat-features.jpg);
   width: 100%;
-  height:fit-content;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -277,23 +368,25 @@ section .content-wrapper {
   width: 90%;
 }
 
-section .features-items {/*parent*/
- 
+.features .features-items {/*parent*/
   display: flex;
-  /*justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  align-content: center;*/
-  flex-wrap: wrap;
+  /*skillcrush: flex-flow: row wrap;*/
+  margin: auto;
   width: 60%;
   
 }
 
-.features-items article{/*child?, can't get centered on the page...*/
+.features-items article{
   display: flex;
+  text-align: center;
+  /*
   justify-content: center;
   align-items: center;
   align-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap;*/
 }
 
 section p .fontawesome-icon {}
@@ -303,12 +396,22 @@ section .features p {
 }
 
 /*          Main Section: Reviews Styles          */
+/*skillcrush:
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-flow: row-wrap;
+}*/
 
-section .reviews {
+section.reviews {
+  background: #2a423a;
+}
+section .reviews .content-wrapper{
   
 }
-
-section .reviews h2 {}
+h2 {
+  padding-top: 50px;
+}
 
 section .reviews article{
   display: flex; /*parent*/
@@ -324,52 +427,36 @@ section article div h3 {}
 
 section article div p {}
 
-/*          Footer Styles       */
-
-footer {
-  width: 100%;
-}
-
-footer .contact-social-wrapper {
-}
-
-footer .footer-content {
-  display: flex; /*parent not centering*/
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  
-}
-
-footer .contact {
-  display: flex;/*child? need to center things inside*/
-  flex-wrap: wrap;
-  width: 60%;
-}
-
-footer h4 {}
-
-footer p {}
-
-footer .social {
-  display: flex;/*child? need to center things inside*/
-  flex-wrap: wrap;
-  width: 60%;
-}
-
-footer .social-icons {}
-
-footer .copywrite {
-}
-
-footer .copywrite p {}
 
 /* --ABOUT PAGE -- Unplugged index.html for mobile first */
+.mission{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
+}
+.contact-content{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
+}
 
+/* --FAQ PAGE -- Unplugged index.html for mobile first */
+.faq{
+  display: flex;
+  flex-wrap: column wrap;
+  justify-content: center;
+  align-content: center;
+}
 
-
-
+.faq .content-wrapper{
+  /*skillcrush:
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;*/
+}
 
 
 
