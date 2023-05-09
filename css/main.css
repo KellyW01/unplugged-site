@@ -87,6 +87,293 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* unplugged index.html mobile first */
+/** {
+  outline: 3px dotted Red;
+  default font stack-
+  font-family: 'Open Sans', sans-serif;
+  h1 and input: poppins, helvetica, arial, open sans
+  h2, h3, h4 - font-family: 'Poppins', sans-serif;
+}*/
+
+
+body {
+  font-size: 16px;
+  color: #e2e3ed;
+  width: 100%;
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*   Base Header - Footer Styles  */
+
+header,
+footer {/*parent*/
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;/*why do i need these?*/
+}
+
+
+/*          Header Styles          */
+
+header {
+  background-color: #202322;
+}
+
+
+header .content-wrapper {/*child*/
+  width: 90%;
+  /*display: flex;
+  flex-direction: column;*/
+  
+  /*parent element for flexbox
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;*/
+
+}
+
+/*controls logo image*/
+header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 70%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header ul {
+  width: 90%;
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin: 0px;
+  border-top: #3a3a3a 2px solid;
+}
+
+header li {
+  /*display: flex;*/
+  /*child for flexbox*/
+  /*justify-content: space-between;*/
+  font-size: 1.125rem;
+  font-weight: bold;
+  list-style: none;
+  text-transform: uppercase;
+  color: #e2e3ed;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #e2e3ed;
+}
+
+/*          Main Styles          */
+
+main {
+  border-top: #3a3a3a 3px solid;
+}
+
+main .hero-area {
+  background: url(../img/unplugged-retreat.jpg);
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+main .content-wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+main h1 {
+  margin: 0px;
+  font-size: 2.25rem;
+  line-height: 43px;
+  font-family: 'Poppins', helvetica, arial, sans-serif;
+  font-weight: 500;
+  padding-top: 2em;
+}
+
+/*          Main-Aside Styles          */
+
+aside {
+  background: #527158;
+}
+
+aside .content-wrapper {
+  /*parent flex*/
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+aside .form-description {
+  /*child to content-wrapper, parent to h3 & p*/
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside h3 {
+  /*display: flex;*/
+  width: 100%;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+aside p {
+  font-size: .875rem;
+  line-height: 1.125rem;
+}
+
+aside .form {
+  /*child*/
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+aside input {
+  width: 100%;
+}
+
+/*          Main Section: Features Styles          */
+
+section .features {
+  background: url(../img/unplugged-retreat-features.jpg);/*img isn't working*/
+  width: 100%;
+  height:fit-content;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+section .content-wrapper {
+  width: 90%;
+}
+
+section .features-items {/*parent*/
+ 
+  display: flex;
+  /*justify-content: center;
+  align-items: center;
+  align-content: center;*/
+  flex-wrap: wrap;
+  width: 60%;
+  
+}
+
+.features-items article{/*child?, can't get centered on the page...*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+section p .fontawesome-icon {}
+
+section .features p {
+  text-align: center;/*not working*/
+}
+
+/*          Main Section: Reviews Styles          */
+
+section .reviews {
+  
+}
+
+section .reviews h2 {}
+
+section .reviews article{
+  display: flex; /*parent*/
+}
+
+section article div {
+  display: flex;
+  flex-wrap: wrap; /*child*/
+
+}
+
+section article div h3 {}
+
+section article div p {}
+
+/*          Footer Styles       */
+
+footer {
+  width: 100%;
+}
+
+footer .contact-social-wrapper {
+}
+
+footer .footer-content {
+  display: flex; /*parent not centering*/
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  
+}
+
+footer .contact {
+  display: flex;/*child? need to center things inside*/
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+footer h4 {}
+
+footer p {}
+
+footer .social {
+  display: flex;/*child? need to center things inside*/
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+footer .social-icons {}
+
+footer .copywrite {
+}
+
+footer .copywrite p {}
+
+/* --ABOUT PAGE -- Unplugged index.html for mobile first */
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -180,9 +467,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -193,6 +480,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -260,4 +548,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
