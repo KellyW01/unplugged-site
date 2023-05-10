@@ -130,12 +130,11 @@ header {
 
 
 header .content-wrapper {/*child*/
-  width: 90%;
-  /*skillcush: 
+  /*skillcush: */
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap */
+  flex-flow: row wrap 
 
 }
 
@@ -147,13 +146,16 @@ header a {
 }
 
 header img {
-  width: 70%;
+  width: 60%;
   margin-top: 15px;
-  margin-bottom: 10px;
+  
+  border-bottom: #3a3a3a 2px solid;
+  padding: 0px 30px 10px 30px;
 }
 
 header nav {
   display: flex;
+  width: 55%;
   
   /*skillcrush:*/
   justify-content: space-around;
@@ -176,7 +178,7 @@ header ul {
   padding-top: 20px;
   padding-bottom: 15px;
   margin: 0px;
-  border-top: #3a3a3a 2px solid;
+  
 }
 
 header li {
@@ -202,6 +204,7 @@ footer {
 }
 
 footer .contact-social-wrapper {
+  margin: 50px 0px;
 }
 
 footer .footer-content {
@@ -210,6 +213,7 @@ footer .footer-content {
   justify-content: center;
   align-content: center;
   align-items: center;
+  margin: 0px 0px 50px 0px;
   
 }
 
@@ -221,10 +225,12 @@ footer .contact {
 }
 
 footer h4 {
+  margin: 20px 0 20px 0;
  
 }
 
-footer p {}
+footer p {
+}
 
 footer .social {
   display: flex;/*child? need to center things inside*/
@@ -258,7 +264,7 @@ main {
   border-top: #3a3a3a 3px solid;
 }
 
-main .hero-area {
+.hero-area {
   background: url(../img/unplugged-retreat.jpg);
   width: 100%;
   height: 500px;
@@ -314,6 +320,7 @@ aside .form-description {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 3em;
 }
 
 aside h3 {
@@ -321,6 +328,7 @@ aside h3 {
   width: 100%;
   font-size: 1.125rem;
   font-weight: 500;
+  
 }
 
 aside p {
@@ -363,8 +371,11 @@ aside input {
   position: relative;
 
 }
+.features article{
+  margin: 18px 0 18px 0;
+}
 
-section .content-wrapper {
+.features .content-wrapper {
   width: 90%;
 }
 
@@ -392,7 +403,10 @@ section .content-wrapper {
 section p .fontawesome-icon {}
 
 section .features p {
-  text-align: center;/*not working*/
+ 
+}
+.fontawesome-icon .features-items-description{
+  
 }
 
 /*          Main Section: Reviews Styles          */
@@ -405,6 +419,7 @@ section .features p {
 
 section.reviews {
   background: #2a423a;
+  padding:0px 0px 50px 0px;
 }
 section .reviews .content-wrapper{
   
@@ -415,6 +430,7 @@ h2 {
 
 section .reviews article{
   display: flex; /*parent*/
+  
 }
 
 section article div {
@@ -423,9 +439,9 @@ section article div {
 
 }
 
-section article div h3 {}
-
-section article div p {}
+.reviews p {
+  margin:18px 0px 18px 0px;
+}
 
 
 /* --ABOUT PAGE -- Unplugged index.html for mobile first */
