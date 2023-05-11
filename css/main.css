@@ -243,6 +243,9 @@ footer .contact {
 footer h4 {
   margin: 20px 0 20px 0;
 }
+footer p{
+  margin-top: 0px;
+}
 
 footer .social {
   display: flex;
@@ -338,12 +341,32 @@ aside .form {
   align-items: center;
   flex-wrap: wrap;
   padding-bottom: 1.5em;
+  margin-top: 30px;
 }
 
-aside input {
+input[type=text] {
+  box-sizing: border-box;
   width: 100%;
-  padding: 2px;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+  text-transform: none;
 }
+
+input[type=button]{
+  width: 100%;
+  padding:20px 0px;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  text-align:center;
+  text-transform: uppercase;
+}
+
+
 
 /*          Main Section: Features Styles          */
 
@@ -429,9 +452,11 @@ section article div {
   margin-top: 0px;
   line-height: 30px;
 }
-
+.reviews h3{
+  margin: 0px;
+}
 .reviews p {
-  margin: 18px 0px 18px 0px;
+  margin: 20px 0px 18px 0px;
 }
 
 
@@ -450,16 +475,26 @@ main {
   border-top: none;
 }
 
-.mission p {
-  margin: 0;
+.mission-content{
+  padding-bottom: 50px;
+  
 }
 
+.mission h2{
+  margin-top: 0px;
+}
+.contact-section{
+  background-color: #2a423a;
+}
+.contact-section h2{
+  margin-top: 0px;
+}
 
 .contact-content {
   display: flex;
-  justify-content: center;
   align-content: center;
   flex-flow: row wrap;
+  padding-bottom: 50px;
 }
 
 /* --FAQ PAGE -- Unplugged index.html for mobile first */
@@ -475,10 +510,15 @@ main {
 
 .faq h2 {
   line-height: 30px;
+  margin-bottom: 40px;
 }
 
 .faq-content h4 {
   line-height: 24px;
+  margin-top: 0px;
+}
+.faq-content p {
+  margin-bottom: 50px;
 }
 
 
