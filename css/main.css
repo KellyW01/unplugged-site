@@ -362,9 +362,7 @@ aside input {
   display:flex;
   justify-content:center;
   flex-flow:row-wrap;*/
-  background: url(img/unplugged-retreat-features.jpg);
-  width: 100%;
-  height: 100%;
+  background: url(../img/unplugged-retreat-features.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -398,6 +396,9 @@ aside input {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;*/
+}
+.features h2{
+  margin-top: 0px;
 }
 
 section p .fontawesome-icon {}
@@ -438,7 +439,9 @@ section article div {
   flex-wrap: wrap; /*child*/
 
 }
-
+.reviews h2{
+  margin-top: 0px;
+}
 .reviews p {
   margin:18px 0px 18px 0px;
 }
@@ -450,7 +453,19 @@ section article div {
   justify-content: center;
   align-content: center;
   flex-flow: row wrap;
+  background: #527158;
+  border-bottom: #5f7162 solid 3px;
+  border-top: #5f7162 solid 3px;
 }
+main{
+  border-top: none;
+}
+
+.mission p{
+  margin:0;
+}
+
+
 .contact-content{
   display: flex;
   justify-content: center;
@@ -460,18 +475,13 @@ section article div {
 
 /* --FAQ PAGE -- Unplugged index.html for mobile first */
 .faq{
-  display: flex;
-  flex-wrap: column wrap;
-  justify-content: center;
-  align-content: center;
+ background:#527158;
 }
 
 .faq .content-wrapper{
-  /*skillcrush:
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-flow: row wrap;*/
+  flex-flow: row wrap;
 }
 
 
@@ -564,17 +574,130 @@ section article div {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (min-width: 768px){
+  /*Tablet Styles Here*/
+  /*home page*/
+  header .content-wrapper{
+    display:flex;
+    flex-flow: row nowrap;
+    width: 640px;
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+  }
+  header nav{
+    display: flex;
+    justify-content: flex-end;
+  }
+  header ul{
+    
+    justify-content: flex-end;
+    
+    padding-left: 5em;
+  }
+  header a{
+    width: 40%;
+    padding-right: 2em;
+    margin: 33px 0px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  header img{
+    border: none;
+    padding-left: 0px;
+  }
+  .hero-area .content-wrapper{
+    width: 640px;
+  }
+  aside .content-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    width: 640px;
+  }
+  aside .form-description{
+    width: 40%;
+    margin: auto;
+    padding: 50px 0px 50px 0px;
+    margin-left: 0px;
+  }
+  aside .form{
+    width: 40%;
+    margin: auto;
+    margin-right: 0px;
+  }
+  .features .content-wrapper{
+    width: 640px;
+  }
+  .features .features-items{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .features article{
+    width: 31%;
+    margin: 30px 10px;
+  }
+  .reviews .content-wrapper{
+    width: 640px;
+  }
+  footer .contact-social-wrapper{
+    width: 640px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+  }
+  footer .footer-content{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  footer .contact,
+  footer .social{
+    width: 30%;
+  }
+
+  /* About Page */
+  .mission .content-wrapper{
+    width: 640px;
+  }
+  .mission-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .mission-content p{
+    width: 43%;
+  }
+  .contact .content-wrapper{
+    width: 640px;
+  }
+  .contact-content h2{
+    width: 80%;
+  }
+  .contact-content{
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .contact-content div{
+    width: 40%;
+  }
+  /* FAQ page */
+.faq .content-wrapper{
+  width: 640px;
+  justify-content: space-between;
+}
+.faq h2{
+width: 100%;
+}
+.faq-content{
+  flex-basis: 40%;
+
+}
 }
 
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width:1200px){
+  /*Desktop Styles Here*/
 }
+      
+
+
 
 /* ==========================================================================
    Print styles.
