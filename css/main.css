@@ -496,11 +496,28 @@ main {
 
 .mission-content{
   padding-bottom: 50px;
-  
 }
 
 .mission h2{
   margin-top: 0px;
+}
+.map-container{
+  position: relative;
+  /* allows us to use position absolute below */
+  padding-bottom: 75%; 
+  /*relationship between height and width of the map: aspect ratio, to do that divide height by width (450/600=.75 aka 75%*/
+  height: 0;
+  /* padding gives the element the height that it needs */
+  overflow: hidden;
+}
+iframe{
+  position: absolute;
+
+  top: 0;
+  /* flush with container */
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .contact-section{
   background-color: #2a423a;
