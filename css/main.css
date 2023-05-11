@@ -203,7 +203,7 @@ footer {
   
 }
 
-footer .contact-social-wrapper {
+footer .contact-wrapper {
   margin: 50px 0px;
 }
 
@@ -639,7 +639,7 @@ main{
   .reviews .content-wrapper{
     width: 640px;
   }
-  footer .contact-social-wrapper{
+  footer .contact-wrapper{
     width: 640px;
     margin-bottom: 10px;
     margin-top: 100px;
@@ -694,6 +694,57 @@ width: 100%;
 
 @media only screen and (min-width:1200px){
   /*Desktop Styles Here*/
+  /* index.html page */
+  header .content-wrapper, 
+  .hero-area .content-wrapper,
+  aside .content-wrapper,
+  .features .content-wrapper,
+  .reviews .content-wrapper,
+  footer .contact-wrapper{
+    width: 960px;
+  }
+  h1{
+    width: 70%;
+  }
+  aside .content-wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+  aside .form-description,
+  aside .form{
+    flex-basis: 30%;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .features .h2{
+    width: 90%;
+  }
+  .features-items article{
+    flex-basis: 20%;
+  }
+  footer .footer-content{
+    justify-content: space-between;
+  }
+  footer .contact,
+  footer .social{
+    flex-basis: 20%;
+    
+  }
+
+  /* about page */
+  .mission .content-wrapper,
+  .contact .content-wrapper{
+    width: 960px;
+  }
+  .mission p{
+    flex-basis: 45%;
+  }
+
+
+  /* faq page */
+  .faq .content-wrapper{
+    width: 960px;
+  }
 }
       
 
