@@ -87,36 +87,100 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* unplugged index.html mobile first */
-/** {
-  outline: 3px dotted Red;
-  default font stack-
-  font-family: 'Open Sans', sans-serif;
-  h1 and input: poppins, helvetica, arial, open sans
-  h2, h3, h4 - font-family: 'Poppins', sans-serif;
-}*/
+/* unplugged index.html (homepage) mobile first */
 
+/* General Styles */
+
+html {
+  font-size: 16px;
+}
 
 body {
-  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
   color: #e2e3ed;
   width: 100%;
   margin: auto;
   font-family: 'Open Sans', sans-serif;
 }
-body p{
-  font-size: .875rem;
-  line-height: 1.125rem;
+
+ul,
+ol {}
+
+li {
+  font-size: 1.125em;
+  font-weight: bold;
+  list-style: none;
+  text-transform: uppercase;
+  color: #e2e3ed;
 }
+
+a {
+  text-decoration: none;
+  color: #e2e3ed;
+}
+
+h1 {
+  font-size: 2.25em;
+  line-height: 43px;
+  font-weight: 500;
+  font-family: 'Poppins', helvetica, arial, sans-serif;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+  padding-top: 50px;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.125em;
+}
+
+img {
+  width: 60%;
+  margin-top: 15px;
+  border-bottom: #3a3a3a 2px solid;
+  padding: 0px 30px 10px 30px;
+}
+
+input {
+  text-transform: uppercase;
+  color: #2a423a;
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+figure {}
+
+/* what is figure? */
+
+address {
+  font-style: normal;
+}
+
+.content-wrapper {
+  width: 90%;
+}
+
+
 
 /*   Base Header - Footer Styles  */
 
 header,
-footer {/*parent*/
-  display:flex;
+footer {
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;/*why do i need these?*/
   background-color: #202322;
   text-align: center;
 }
@@ -124,46 +188,19 @@ footer {/*parent*/
 
 /*          Header Styles          */
 
-header {
- 
-}
-
-
-header .content-wrapper {/*child*/
-  /*skillcush: */
+header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap 
-
-}
-
-/*controls logo image*/
-header a {
-  /* kelly: display: flex;
-  justify-content: center;
-  align-items: center;*/
-}
-
-header img {
-  width: 60%;
-  margin-top: 15px;
-  
-  border-bottom: #3a3a3a 2px solid;
-  padding: 0px 30px 10px 30px;
+  flex-flow: row wrap
 }
 
 header nav {
   display: flex;
   width: 55%;
-  
-  /*skillcrush:*/
   justify-content: space-around;
-  align-items:center;
+  align-items: center;
   flex-flow: row wrap;
-
-  /* kelly:
-  justify-content: space-evenly;*/
 }
 
 header ul {
@@ -174,47 +211,26 @@ header ul {
   justify-content: space-around;
   /*kelly:
   justify-content: space-evenly;*/
-  
+
   padding-top: 20px;
   padding-bottom: 15px;
   margin: 0px;
-  
 }
 
-header li {
-  /*display: flex;*/
-  /*child for flexbox*/
-  /*justify-content: space-between;*/
-  font-size: 1.125rem;
-  font-weight: bold;
-  list-style: none;
-  text-transform: uppercase;
-  color: #e2e3ed;
-}
-
-header nav a {
-  text-decoration: none;
-  color: #e2e3ed;
-}
 
 /*          Footer Styles       */
-
-footer {
-  
-}
 
 footer .contact-wrapper {
   margin: 50px 0px;
 }
 
 footer .footer-content {
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   align-items: center;
   margin: 0px 0px 50px 0px;
-  
 }
 
 footer .contact {
@@ -226,18 +242,13 @@ footer .contact {
 
 footer h4 {
   margin: 20px 0 20px 0;
- 
-}
-
-footer p {
 }
 
 footer .social {
-  display: flex;/*child? need to center things inside*/
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 60%;
-  
 }
 
 footer .social-icons {
@@ -245,17 +256,13 @@ footer .social-icons {
   justify-content: space-around;
   align-items: center;
 }
+
 /*skillcrush:
 footer .social-icons p{
   display: flex;
   justify-content: center;
   align-items: center;
 }*/
-
-footer .copywrite {
-}
-
-footer .copywrite p {}
 
 
 /*          Main Styles          */
@@ -281,12 +288,9 @@ main .content-wrapper {
 
 main h1 {
   margin: 0px;
-  font-size: 2.25rem;
-  line-height: 43px;
-  font-family: 'Poppins', helvetica, arial, sans-serif;
-  font-weight: 500;
   padding-top: 2em;
 }
+
 /*skillcrush
 .hero-area{
   display: flex;
@@ -306,8 +310,6 @@ aside {
 }
 
 aside .content-wrapper {
-  /*parent flex*/
-  width: 90%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -326,14 +328,6 @@ aside .form-description {
 aside h3 {
   /*display: flex;*/
   width: 100%;
-  font-size: 1.125rem;
-  font-weight: 500;
-  
-}
-
-aside p {
-  font-size: .875rem;
-  line-height: 1.125rem;
 }
 
 aside .form {
@@ -349,10 +343,6 @@ aside .form {
 aside input {
   width: 100%;
   padding: 2px;
-  text-transform: uppercase;
-  color: #2a423a;
-  font-size: 1.125rem;
-  font-weight: 500;
 }
 
 /*          Main Section: Features Styles          */
@@ -367,17 +357,15 @@ aside input {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
 }
-.features article{
+
+.features article {
   margin: 18px 0 18px 0;
 }
 
-.features .content-wrapper {
-  width: 90%;
-}
 
-.features .features-items {/*parent*/
+.features .features-items {
+  /*parent*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -385,10 +373,9 @@ aside input {
   /*skillcrush: flex-flow: row wrap;*/
   margin: auto;
   width: 60%;
-  
 }
 
-.features-items article{
+.features-items article {
   display: flex;
   text-align: center;
   /*
@@ -397,18 +384,16 @@ aside input {
   align-content: center;
   flex-wrap: wrap;*/
 }
-.features h2{
+
+.features h2 {
   margin-top: 0px;
 }
 
 section p .fontawesome-icon {}
 
-section .features p {
- 
-}
-.fontawesome-icon .features-items-description{
-  
-}
+section .features p {}
+
+.fontawesome-icon .features-items-description {}
 
 /*          Main Section: Reviews Styles          */
 /*skillcrush:
@@ -420,35 +405,38 @@ section .features p {
 
 section.reviews {
   background: #2a423a;
-  padding:0px 0px 50px 0px;
-}
-section .reviews .content-wrapper{
-  
-}
-h2 {
-  padding-top: 50px;
+  padding: 0px 0px 50px 0px;
 }
 
-section .reviews article{
-  display: flex; /*parent*/
-  
+section .reviews .content-wrapper {}
+
+h2 {
+  /* padding-top: 50px; */
+}
+
+section .reviews article {
+  display: flex;
+  /*parent*/
 }
 
 section article div {
   display: flex;
-  flex-wrap: wrap; /*child*/
+  flex-wrap: wrap;
+  /*child*/
+}
 
-}
-.reviews h2{
+.reviews h2 {
   margin-top: 0px;
+  line-height: 30px;
 }
+
 .reviews p {
-  margin:18px 0px 18px 0px;
+  margin: 18px 0px 18px 0px;
 }
 
 
 /* --ABOUT PAGE -- Unplugged index.html for mobile first */
-.mission{
+.mission {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -457,16 +445,17 @@ section article div {
   border-bottom: #5f7162 solid 3px;
   border-top: #5f7162 solid 3px;
 }
-main{
+
+main {
   border-top: none;
 }
 
-.mission p{
-  margin:0;
+.mission p {
+  margin: 0;
 }
 
 
-.contact-content{
+.contact-content {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -474,15 +463,24 @@ main{
 }
 
 /* --FAQ PAGE -- Unplugged index.html for mobile first */
-.faq{
- background:#527158;
+.faq {
+  background: #527158;
 }
 
-.faq .content-wrapper{
+.faq .content-wrapper {
   display: flex;
   align-items: center;
   flex-flow: row wrap;
 }
+
+.faq h2 {
+  line-height: 30px;
+}
+
+.faq-content h4 {
+  line-height: 24px;
+}
+
 
 
 
@@ -574,179 +572,271 @@ main{
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
+
   /*Tablet Styles Here*/
+  h1{
+    font-size: 3em;
+    line-height: 48px;
+  }
+
+  h2{
+    font-size: 2.25em;
+    line-height: 48px;
+  }
+
+  h3{
+    font-size: 1.5em;
+    line-height: 30px;
+  }
+
+  footer h4,
+  .contact h4{
+    font-size: 1.5em;
+  }
+
+  footer p{
+    line-height: 18px;
+  }
+
+  .faq h4,
+  .faq p{
+    font-size: .875em;
+    line-height: 15.75px;
+  }
+
+
   /*home page*/
-  header .content-wrapper{
-    display:flex;
+  header .content-wrapper {
+    display: flex;
     flex-flow: row nowrap;
     width: 640px;
-
   }
-  header nav{
+
+  header nav {
     display: flex;
     justify-content: flex-end;
   }
-  header ul{
-    
+
+  header ul {
     justify-content: flex-end;
-    
     padding-left: 5em;
   }
-  header a{
+
+  header a {
     width: 40%;
     padding-right: 2em;
     margin: 33px 0px;
     display: flex;
     justify-content: flex-start;
   }
-  header img{
+
+  header img {
     border: none;
     padding-left: 0px;
   }
-  .hero-area .content-wrapper{
+
+  .hero-area .content-wrapper {
     width: 640px;
   }
-  aside .content-wrapper{
+
+  aside .content-wrapper {
     display: flex;
     flex-flow: row wrap;
     width: 640px;
   }
-  aside .form-description{
+
+  aside .form-description {
     width: 40%;
     margin: auto;
     padding: 50px 0px 50px 0px;
     margin-left: 0px;
   }
-  aside .form{
+
+  aside .form {
     width: 40%;
     margin: auto;
     margin-right: 0px;
   }
-  .features .content-wrapper{
+
+  .features .content-wrapper {
     width: 640px;
   }
-  .features .features-items{
+
+  .features .features-items {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     width: 100%;
   }
-  .features article{
+
+  .features article {
     width: 31%;
     margin: 30px 10px;
   }
-  .reviews .content-wrapper{
+
+  .reviews .content-wrapper {
     width: 640px;
   }
-  footer .contact-wrapper{
+
+  footer .contact-wrapper {
     width: 640px;
     margin-bottom: 10px;
     margin-top: 100px;
   }
-  footer .footer-content{
+
+  footer .footer-content {
     display: flex;
     flex-flow: row wrap;
   }
+
   footer .contact,
-  footer .social{
+  footer .social {
     width: 30%;
   }
 
   /* About Page */
-  .mission .content-wrapper{
+  .mission .content-wrapper {
     width: 640px;
   }
-  .mission-content{
+
+  .mission-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .mission-content p{
+
+  .mission-content p {
     width: 43%;
   }
-  .contact .content-wrapper{
+
+  .contact .content-wrapper {
     width: 640px;
   }
-  .contact-content h2{
+
+  .contact-content h2 {
     width: 80%;
   }
-  .contact-content{
+
+  .contact-content {
     align-items: flex-start;
     justify-content: space-between;
   }
-  .contact-content div{
+
+  .contact-content div {
     width: 40%;
   }
+
   /* FAQ page */
-.faq .content-wrapper{
-  width: 640px;
-  justify-content: space-between;
-}
-.faq h2{
-width: 100%;
-}
-.faq-content{
-  flex-basis: 40%;
+  .faq .content-wrapper {
+    width: 640px;
+    justify-content: space-between;
+  }
 
-}
+  .faq h2 {
+    width: 100%;
+  }
+
+  .faq-content {
+    flex-basis: 40%;
+  }
 }
 
-@media only screen and (min-width:1200px){
+@media only screen and (min-width:1200px) {
+
   /*Desktop Styles Here*/
+  h1{
+    font-size: 3.75em;
+  }
+
+  h2{
+    font-size: 2.25em;
+  }
+
+  .faq h2,
+  .mission h2{
+    font-size: 3em;
+  }
+
+  h3,
+  h4{
+    font-size: 1.875em;
+  }
+
+  .faq h4,
+  .faq p{
+    font-size: 1.125em;
+    line-height: 18px;
+  }
+
+  p{
+    font-size: 1.125em;
+    line-height: 24px;
+  }
+
+
+
   /* index.html page */
-  header .content-wrapper, 
+  header .content-wrapper,
   .hero-area .content-wrapper,
   aside .content-wrapper,
   .features .content-wrapper,
   .reviews .content-wrapper,
-  footer .contact-wrapper{
+  footer .contact-wrapper {
     width: 960px;
   }
-  h1{
+
+  h1 {
     width: 70%;
   }
-  aside .content-wrapper{
+
+  aside .content-wrapper {
     display: flex;
     justify-content: space-around;
   }
+
   aside .form-description,
-  aside .form{
+  aside .form {
     flex-basis: 30%;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
   }
-  .features .h2{
+
+  .features .h2 {
     width: 90%;
   }
-  .features-items article{
+
+  .features-items article {
     flex-basis: 20%;
   }
-  footer .footer-content{
+
+  footer .footer-content {
     justify-content: space-between;
   }
+
   footer .contact,
-  footer .social{
+  footer .social {
     flex-basis: 20%;
-    
+
   }
 
   /* about page */
   .mission .content-wrapper,
-  .contact .content-wrapper{
+  .contact .content-wrapper {
     width: 960px;
   }
-  .mission p{
+
+  .mission p {
     flex-basis: 45%;
   }
 
 
   /* faq page */
-  .faq .content-wrapper{
+  .faq .content-wrapper {
     width: 960px;
   }
 }
-      
+
 
 
 
