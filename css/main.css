@@ -146,11 +146,18 @@ p {
   line-height: 1.125em;
 }
 
-img {
-  width: 60%;
+a img {
+  /* width: 60%;
   margin-top: 15px;
   border-bottom: #3a3a3a 2px solid;
-  padding: 0px 30px 10px 30px;
+  padding: 0px 30px 10px 30px; */
+}
+img{
+  width: 100%;
+}
+
+figure {
+  margin: 0px;
 }
 
 input {
@@ -159,10 +166,6 @@ input {
   font-size: 1.125em;
   font-weight: 500;
 }
-
-figure {}
-
-/* what is figure? */
 
 address {
   font-style: normal;
@@ -215,6 +218,19 @@ header ul {
   padding-top: 20px;
   padding-bottom: 15px;
   margin: 0px;
+}
+header figure{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.header-divider{
+  background-color: #3a3a3a;
+  width: 90%;
+  height: 2px;
+  margin-top: 1em;
 }
 
 
@@ -275,13 +291,13 @@ main {
 }
 
 .hero-area {
-  background: url(../img/unplugged-retreat.jpg);
-  width: 100%;
+  background: url(../img/unplugged-retreat.jpg)  center no-repeat #333;
   height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap; */
 }
 
 main .content-wrapper {
@@ -379,7 +395,6 @@ input[type=button]{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 .features article {
@@ -453,10 +468,14 @@ section article div {
   line-height: 30px;
 }
 .reviews h3{
-  margin: 0px;
+  margin: 20px 0px 0px 0px;
 }
 .reviews p {
   margin: 20px 0px 18px 0px;
+}
+.reviews figure{
+  width: 100%;
+
 }
 
 
@@ -615,6 +634,12 @@ main {
 @media only screen and (min-width: 768px) {
 
   /*Tablet Styles Here*/
+  .header-divider{
+    height: 0px;
+  }
+  header figure{
+    width: 100%;
+  }
   h1{
     font-size: 3em;
     line-height: 48px;
@@ -664,7 +689,7 @@ main {
   }
 
   header a {
-    width: 40%;
+    width: 100%;
     padding-right: 2em;
     margin: 33px 0px;
     display: flex;
@@ -717,6 +742,26 @@ main {
 
   .reviews .content-wrapper {
     width: 640px;
+  }
+
+  .reviews .content-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .reviews article{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .reviews figure,
+  .reviews div{
+    width: 45%;
+  }
+  /* .reviews figure{
+    margin-right: 10px;
+  } */
+  .reviews h3{
+    margin-top: 0px;
   }
 
   footer .contact-wrapper {
