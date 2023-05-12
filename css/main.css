@@ -380,6 +380,10 @@ input[type=button]{
   margin: 18px 0 18px 0;
 }
 
+.features i {
+	font-size: 3.75em;
+  /* margin-bottom: 40px; */
+}
 
 .features .features-items {
   display: flex;
@@ -391,6 +395,7 @@ input[type=button]{
 }
 
 .features-items article {
+  flex-direction: column;
   display: flex;
   text-align: center;
 }
@@ -398,7 +403,9 @@ input[type=button]{
 .features h2 {
   margin-top: 0px;
 }
-
+.features .features-item-description{
+  margin: 20px 0px;
+}
 
 /*Reviews Styles*/
 
@@ -421,6 +428,7 @@ section article div {
 .reviews h2 {
   margin-top: 0px;
   line-height: 30px;
+  margin-bottom: 40px;
 }
 .reviews h3{
   margin: 20px 0px 0px 0px;
