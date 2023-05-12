@@ -265,22 +265,25 @@ footer p{
 }
 
 footer .social {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   width: 60%;
 }
 
 footer .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  
 }
 
 footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: #527158 solid 5px;
+  border-radius: 100px;
+  width: 20px;
+  height: 20px;
+  background-color: #527158;
 }
 
 
@@ -845,7 +848,9 @@ iframe{
   .features-items article {
     flex-basis: 27%;
   }
-
+  .social{
+    width: 60%;
+  }
 
    /* ==========================================================================
    About Page
