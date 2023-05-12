@@ -344,6 +344,7 @@ aside .form {
   flex-wrap: wrap;
   padding-bottom: 1.5em;
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 input[type=text] {
@@ -395,6 +396,7 @@ input[type=button]{
   align-items: center;
   margin: auto;
   width: 60%;
+  padding-bottom: 50px;
 }
 
 .features-items article {
@@ -512,6 +514,7 @@ iframe{
 .faq h2 {
   line-height: 30px;
   margin-bottom: 40px;
+  font-weight:500;
 }
 
 .faq-content h4 {
@@ -701,9 +704,14 @@ iframe{
   width: 31%;
   margin: 30px 10px;
 }
+.features h2{
+  margin-bottom: 15px;
+}
 
 /* Reviews */
-
+.reviews .content-wrapper{
+  padding-bottom: 50px;
+}
 .reviews article{
   display: flex;
   justify-content: space-between;
@@ -767,6 +775,12 @@ iframe{
   .mission-content p {
     width: 43%;
   }
+  .contact-section h2{
+    width: 80%;
+  }
+  header{
+    height: 100px;
+  }
 
   .contact-content h2 {
     width: 80%;
@@ -801,7 +815,9 @@ iframe{
   .faq h2 {
     width: 100%;
   }
-
+  .faq h4{
+    font-weight: 600;
+  }
   .faq-content {
     flex-basis: 40%;
   }
@@ -816,6 +832,7 @@ iframe{
   h1{
     font-size: 3.75em;
     width: 80%;
+    line-height: 1.1em;
   }
 
   h2{
@@ -830,7 +847,9 @@ iframe{
     font-size: 1.125em;
     line-height: 24px;
   }
-
+  header a{
+    width: 80%;
+  }
   aside .content-wrapper {
     display: flex;
     justify-content: space-around;
@@ -864,8 +883,12 @@ iframe{
     padding-bottom: 47%;
   }
   .faq h2,
-  .mission h2{
+  .mission h2,
+  .contact-section h2{
     font-size: 3em;
+  }
+  header figure{
+    width:70%;
   }
 
  /* ==========================================================================
