@@ -797,8 +797,8 @@ iframe{
   }
 
   .map-container{
-    /* height: 350px / 640px for tablet width = .546 or 55%; */
-    padding-bottom: 55%;
+    /* height: 350px / 768px for media quiry tablet width = .455 or 45.5%; */
+    padding-bottom: 45.5%;
   }
  /* ==========================================================================
    FAQ Page
@@ -822,7 +822,7 @@ iframe{
     flex-basis: 40%;
   }
 }
-
+/* ----------------------------------------------*/
 @media only screen and (min-width:1200px) {
 
   /*Desktop Styles Here*/
@@ -879,8 +879,8 @@ iframe{
     flex-basis: 45%;
   }
   .map-container{
-    /* height: 450px / 960px = 47%; */
-    padding-bottom: 47%;
+    /* height: 450px / 1200px = .375; */
+    padding-bottom: 37.5%;
   }
   .faq h2,
   .mission h2,
