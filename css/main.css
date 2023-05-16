@@ -524,7 +524,12 @@ iframe{
 .faq-content p {
   margin-bottom: 50px;
 }
+.faq-image {
+  background: url(https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)center no-repeat #333;
+  height: 500px;
+  background-size: cover;
 
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
